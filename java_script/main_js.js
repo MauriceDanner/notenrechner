@@ -1,4 +1,4 @@
-let note_1;                                                                                                             //Definition der Variablen
+let note_1;                                                                                                              //Definition der Variablen
 let note_2;
 let note_3;
 let note_4;
