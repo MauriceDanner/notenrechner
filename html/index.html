@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Notenrechner</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="../java_script/main_js.js"></script>
+    <link rel="stylesheet" href="../css/main_stylesheet.css">
+</head>
+<body>
+<h1> Kostenfreier Notenrechner</h1>
+<img src="../img/Holz-Taschenrechner.jpg" height="240" width="361" alt="Bild eines Taschenrechners"/>
+<h2> Gib in die folgenden Felder deine bisherigen Noten ein:</h2>
+
+<form action="#">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="notenfeld_1">
+        <label class="mdl-textfield__label" for="notenfeld_1">Notenpunkte...</label>
+        <span class="mdl-textfield__error">Bitte gib eine Nummer von 0-15 ein!</span>
+    </div>
+</form>
+<form action="#">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="notenfeld_2">
+        <label class="mdl-textfield__label" for="notenfeld_2">Notenpunkte...</label>
+        <span class="mdl-textfield__error">Bitte gib eine Nummer von 0-15 ein!</span>
+    </div>
+</form>
+<form action="#">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="notenfeld_3">
+        <label class="mdl-textfield__label" for="notenfeld_3">Notenpunkte...</label>
+        <span class="mdl-textfield__error">Bitte gib eine Nummer von 0-15 ein!</span>
+    </div>
+</form>
+<form action="#">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="notenfeld_4">
+        <label class="mdl-textfield__label" for="notenfeld_4">Notenpunkte...</label>
+        <span class="mdl-textfield__error">Bitte gib eine Nummer von 0-15 ein!</span>
+    </div>
+</form>
+<form action="#">
+    <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="notenfeld_5">
+        <label class="mdl-textfield__label" for="notenfeld_5">Notenpunkte...</label>
+        <span class="mdl-textfield__error">Bitte gib eine Nummer von 0-15 ein!</span>
+    </div>
+<br>
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="notenfelder_auslesen()">
+        DURCHSCHNITT BERECHNEN
+    </button>
+
+</form>
+<br>
+<p> Dein Notendurchschnitt ist:</p>
+<p id="ausgabe" ></p>
+
+</body>
+</html>
